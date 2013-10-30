@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Catalyst-View-Spreadsheet-Template,
-version 0.01:
+version 0.02:
 
   render Spreadsheet::Template templates in Catalyst
 

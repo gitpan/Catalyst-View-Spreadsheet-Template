@@ -32,14 +32,17 @@ my %WriteMakefileArgs = (
     "Catalyst::Action::RenderView" => 0,
     "Catalyst::Controller" => 0,
     "Catalyst::Test" => 0,
-    "File::Find" => 0,
-    "File::Temp" => 0,
+    "File::Spec" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
     "Spreadsheet::ParseXLSX" => 0,
     "Test::More" => "0.88",
+    "lib" => 0,
     "strict" => 0,
+    "utf8" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

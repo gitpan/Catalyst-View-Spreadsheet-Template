@@ -3,7 +3,7 @@ BEGIN {
   $Catalyst::View::Spreadsheet::Template::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Catalyst::View::Spreadsheet::Template::VERSION = '0.01';
+  $Catalyst::View::Spreadsheet::Template::VERSION = '0.02';
 }
 use Moose;
 use namespace::autoclean;
@@ -105,7 +105,7 @@ sub render {
     my ($c) = @_;
 
     $self->renderer->render(
-        scalar($self->template_file($c)->slurp),
+        scalar($self->template_file($c)->slurp(iomode => '<:encoding(UTF-8)')),
         {
             %{ $c->stash },
             $self->catalyst_var => $c,
@@ -154,7 +154,7 @@ Catalyst::View::Spreadsheet::Template - render Spreadsheet::Template templates i
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
